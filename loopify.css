@@ -1,6 +1,18 @@
 body{
     background: #000;
+    
+}
+#js-gifContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 p{
-    color: lightgreen;
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width: 768px){
+    .gif-container{
+        grid-template-columns: 1fr;
+    }
 }
