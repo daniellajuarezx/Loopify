@@ -1,19 +1,25 @@
 body{
     background: #000;
 }
-.gif-location{
+.gifDisplay{
     display: grid;
     margin: 2rem;
-    gap: 20px;
+    padding: 1rem;
+    gap: 15px;
+    max-width: 100%;
+    object-fit: contain;
+    border-style: double;
+    border-color: #bafeae;
 }
 @media (min-width: 768px){
-    .gif-location{
+    .gifDisplay{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        /*opted for 3 gifs bc 4 made there be a horizontal scroll bar, even after obj fit contain*/
     }
 }
 @media (max-width: 480px){
-    .gif-location{
+    .gifDisplay{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
